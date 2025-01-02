@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danilo Lima | Portfólio</title>
-    <link rel="icon" href="assets/img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danilo Lima | Portfólio</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  />
 </head>
 <body>
-<!-- Início do Header -->
-<header class="header" id="home">
-    <nav class="navbar">
-      <div class="logo">Danilo Lima</div>
+  <!-- NAVBAR FIXA -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Danilo Marques Lima</div>
       <ul class="nav-links">
-        <li><a href="#home">Início</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#projects">Projetos</a></li>
+        <li><a href="#certificates">Certificados</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Olá, eu sou <span>Seu Nome</span>.</h1>
-      <p>Uma breve descrição do que você faz: Cientista de Dados, Analista, Dev, etc.</p>
-      <a href="#about" class="btn">Saiba Mais</a>
     </div>
-  </header>
-  <!-- Fim do Header -->
+  </nav>
 
-  <!-- Seção Sobre -->
+  <!-- SEÇÃO ABOUT ME -->
   <section class="about-section" id="about">
-    <div class="section-title">
-      <h2>Sobre Mim</h2>
-    </div>
     <div class="about-container">
-      <div class="about-image">
-        <img src="assets/img/profile.jpg" alt="Minha Foto">
-      </div>
-      <div class="about-text">
+      <!-- Coluna Esquerda: Texto principal -->
+      <div class="about-text-col">
+        <h2>About Me</h2>
+        <hr />
         <p>
-          Insira aqui um texto sobre você, suas formações, suas experiências e o que te motiva 
-          na Ciência de Dados ou na área em que você atua. Fale também sobre suas principais 
-          habilidades e interesses.
+          Hello! I'm <strong>Seu Nome</strong>, um entusiasta de dados naturalmente inquisitivo, 
+          com paixão por 
+          <strong>coleta, análise e transformação de informações</strong>. 
+          Meu foco é descobrir <strong>insights valiosos</strong> que possam trazer 
+          oportunidades de crescimento para empresas e projetos.
         </p>
+
+        <p>
+          Ao longo da minha trajetória, <strong>desenvolvi habilidades</strong> em 
+          áreas como Estatística, Python, SQL e BI, sempre em busca de me manter atualizado 
+          em relação às melhores ferramentas e metodologias. 
+          Hoje, aplico essa paixão em diferentes projetos, ajudando times e organizações 
+          a tomar decisões mais embasadas e estratégicas.
+        </p>
+
+        <p>
+          Vamos conversar e descobrir como podemos juntos 
+          <strong>transformar dados em insights acionáveis</strong>, liberando 
+          o poder da análise de dados!
+        </p>
+      </div>
+
+      <!-- Coluna Direita: Foto e links sociais -->
+      <div class="about-image-col">
+        <img 
+          src="assets/img/profile.jpg" 
+          alt="Sua foto" 
+          class="about-profile-img"
+        />
+        <p class="about-greeting">Hello, I'm Seu Nome!</p>
+
+        <div class="about-socials">
+          <h3>Socials</h3>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:seuemail@exemplo.com" target="_blank">
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/seu-usuario" target="_blank">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-  <!-- Fim da Seção Sobre -->
+  <!-- FIM SEÇÃO ABOUT ME -->
 
-  <!-- Seção Projetos -->
+  <!-- SEÇÃO PROJETOS -->
   <section class="projects-section" id="projects">
     <div class="section-title">
       <h2>Projetos</h2>
@@ -57,38 +98,57 @@
     <div class="projects-container">
       <!-- Card de Projeto 1 -->
       <div class="project-card">
-        <img src="assets/img/project1.jpg" alt="Projeto 1" class="project-img">
+        <img src="assets/img/project1.jpg" alt="Projeto 1" class="project-img" />
         <div class="project-content">
           <h3>Projeto 1</h3>
-          <p>Breve descrição do projeto 1. O que ele faz, quais tecnologias foram usadas, etc.</p>
+          <p>Breve descrição do projeto 1: tecnologias, objetivos, etc.</p>
           <a href="#" class="btn" target="_blank">Ver Detalhes</a>
         </div>
       </div>
       <!-- Card de Projeto 2 -->
       <div class="project-card">
-        <img src="assets/img/project2.jpg" alt="Projeto 2" class="project-img">
+        <img src="assets/img/project2.jpg" alt="Projeto 2" class="project-img" />
         <div class="project-content">
           <h3>Projeto 2</h3>
-          <p>Breve descrição do projeto 2. O que ele faz, quais tecnologias foram usadas, etc.</p>
+          <p>Breve descrição do projeto 2: tecnologias, objetivos, etc.</p>
           <a href="#" class="btn" target="_blank">Ver Detalhes</a>
         </div>
       </div>
-      <!-- Card de Projeto 3 -->
-      <div class="project-card">
-        <img src="assets/img/project3.jpg" alt="Projeto 3" class="project-img">
-        <div class="project-content">
-          <h3>Projeto 3</h3>
-          <p>Breve descrição do projeto 3. O que ele faz, quais tecnologias foram usadas, etc.</p>
-          <a href="#" class="btn" target="_blank">Ver Detalhes</a>
-        </div>
-      </div>
-
-      <!-- Adicione quantos cards quiser -->
+      <!-- Adicione mais cards conforme necessário -->
     </div>
   </section>
-  <!-- Fim da Seção Projetos -->
+  <!-- FIM SEÇÃO PROJETOS -->
 
-  <!-- Seção Contato -->
+  <!-- SEÇÃO CERTIFICADOS -->
+  <section class="certificates-section" id="certificates">
+    <div class="section-title">
+      <h2>Certificados</h2>
+    </div>
+    <div class="certificates-container">
+      <!-- Card de Certificado 1 -->
+      <div class="certificate-card">
+        <img src="assets/img/cert1.jpg" alt="Certificado 1" class="certificate-img" />
+        <div class="certificate-content">
+          <h3>Certificado 1</h3>
+          <p>Breve descrição sobre o certificado, instituição, data de conclusão, etc.</p>
+          <a href="#" class="btn" target="_blank">Ver Certificado</a>
+        </div>
+      </div>
+      <!-- Card de Certificado 2 -->
+      <div class="certificate-card">
+        <img src="assets/img/cert2.jpg" alt="Certificado 2" class="certificate-img" />
+        <div class="certificate-content">
+          <h3>Certificado 2</h3>
+          <p>Breve descrição sobre o certificado, instituição, data de conclusão, etc.</p>
+          <a href="#" class="btn" target="_blank">Ver Certificado</a>
+        </div>
+      </div>
+      <!-- Adicione mais cards conforme necessário -->
+    </div>
+  </section>
+  <!-- FIM SEÇÃO CERTIFICADOS -->
+
+  <!-- SEÇÃO CONTATO -->
   <section class="contact-section" id="contact">
     <div class="section-title">
       <h2>Contato</h2>
@@ -98,29 +158,47 @@
       <form class="contact-form" action="#" method="post">
         <div class="form-group">
           <label for="name">Nome</label>
-          <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Seu Nome" 
+            required 
+          />
         </div>
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="seuemail@exemplo.com" 
+            required 
+          />
         </div>
         <div class="form-group">
           <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="Digite sua mensagem..." 
+            required
+          ></textarea>
         </div>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
   </section>
-  <!-- Fim da Seção Contato -->
+  <!-- FIM SEÇÃO CONTATO -->
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
   </footer>
-  <!-- Fim do Footer -->
+  <!-- FIM DO FOOTER -->
 
-  <!-- JS (opcional) -->
+  <!-- SCRIPT JS (opcional) -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>

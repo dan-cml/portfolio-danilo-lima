@@ -68,7 +68,7 @@
               </a>
             </li>
             <li>
-              <a href="daniloc.marqueslima@gmail.com" target="_blank">
+              <a href="mailto:daniloc.marqueslima@gmail.com" target="_blank">
                 <img src="assets/img/icon-email.png" alt="Email" class="social-icon" />
                 Email
               </a>
@@ -157,13 +157,25 @@
     </div>
     <div class="contact-container">
       <p>Fique à vontade para me enviar uma mensagem.</p>
-      <form class="contact-form" action="#" method="post">
+      <!-- 
+        Usamos: 
+          action="mailto:seuemail@exemplo.com?subject=Contato%20via%20Portf%C3%B3lio"
+          method="GET"
+          enctype="text/plain"
+        para abrir o cliente de e-mail do usuário
+      -->
+      <form 
+        class="contact-form" 
+        action="mailto:seuemail@exemplo.com?subject=Contato%20via%20Portf%C3%B3lio" 
+        method="GET" 
+        enctype="text/plain"
+      >
         <div class="form-group">
           <label for="name">Nome</label>
           <input 
             type="text" 
             id="name" 
-            name="name" 
+            name="Nome" 
             placeholder="Seu Nome" 
             required 
           />
@@ -173,7 +185,7 @@
           <input 
             type="email" 
             id="email" 
-            name="email" 
+            name="E-mail" 
             placeholder="seuemail@exemplo.com" 
             required 
           />
@@ -182,7 +194,7 @@
           <label for="message">Mensagem</label>
           <textarea 
             id="message" 
-            name="message" 
+            name="Mensagem" 
             rows="5" 
             placeholder="Digite sua mensagem..." 
             required

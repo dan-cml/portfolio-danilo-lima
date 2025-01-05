@@ -24,19 +24,19 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   const messageValue = document.getElementById('message').value;
   
   // Monta o assunto e o corpo do e-mail
-  const subject = encodeURIComponent(`Contato de ${nameValue}`);
+  const subject = encodeURIComponent(`Contato de ${nameValue} via portfolio`);
   
   // Texto genérico + dados do formulário
   const body = encodeURIComponent(
     `Olá, gostaria de entrar em contato.\n\n` +
-    `Nome: ${nameValue}\n` +
+    `Me chamo: ${nameValue}\n` +
     `Email: ${emailValue}\n\n` +
     `Mensagem:\n${messageValue}\n\n` +
-    `Enviado via meu portfólio!`
+    `Enviado via portfólio Danilo Marques Lima!`
   );
 
   // Substitua pelo SEU e-mail real
-  const mailtoLink = `mailto:seuemail@exemplo.com?subject=${subject}&body=${body}`;
+  const mailtoLink = `mailto:daniloc.marqueslima@gmail.com?subject=${subject}&body=${body}`;
 
   // Abre o cliente de e-mail
   window.location.href = mailtoLink;

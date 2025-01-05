@@ -41,29 +41,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Abre o cliente de e-mail
   window.location.href = mailtoLink;
 });
-
-const emailLink = document.getElementById('emailLink');
-
-// Adiciona um listener para o clique
-emailLink.addEventListener('click', function(event) {
-  event.preventDefault(); // impede navegação normal (href="#")
-
-  // Monta seu mailto:
-  //  - Você pode ajustar subject e body conforme desejar
-  const mailtoLink = 'mailto:seuemail@exemplo.com'
-    + '?subject=' + encodeURIComponent('Contato via Socials')
-    + '&body='   + encodeURIComponent('Olá! Gostaria de entrar em contato...');
-
-  // Tenta abrir o cliente de e-mail
-  window.location.href = mailtoLink;
-
-  // Se em ~1s ainda estivermos “visíveis”, provavelmente o mailto falhou
-  setTimeout(() => {
-    if (document.visibilityState === 'visible') {
-      alert(
-        'Parece que você não possui um cliente de e-mail configurado.\n' +
-        'Mas para mantermos contatos, envie uma mensagem para: daniloc.marqueslima@gmai.com'
-      );
-    }
-  }, 1000);
-});

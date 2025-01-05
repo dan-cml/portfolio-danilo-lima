@@ -30,7 +30,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   const body = encodeURIComponent(
     `Olá, gostaria de entrar em contato.\n\n` +
     `Me chamo: ${nameValue}\n` +
-    `Email: ${emailValue}\n\n` +
+    `Email de contato: ${emailValue}\n\n` +
     `Mensagem:\n${messageValue}\n\n` +
     `Enviado via portfólio Danilo Marques Lima!`
   );
